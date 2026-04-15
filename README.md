@@ -5,11 +5,18 @@ Demo firmware for driving direct 7-segment LCD panels using the internal LCD con
 
 # PIC16F1939 LCD Driver Demo
 
+YouTube video for single LCD version:
+https://www.youtube.com/watch?v=jzmZW3ma5rI
+
 ## Overview
 
 This project demonstrates direct driving of segmented 7-segment LCD displays using the internal LCD controller of the PIC16F1939 microcontroller.
 
 The firmware configures the LCD peripheral, uses Timer1 with an external low-frequency clock source, and updates display contents through an interrupt routine. Custom segment mapping is implemented manually for multiple displayed digits and indicator dots.
+
+Unfortunately, the PIC16F1939 does not provide enough I/O pins to directly drive four LCD panels simultaneously. The original goal of this project was to build a multi-digit digital clock using these displays. As a result, the current implementation only serves as a proof of concept.
+
+Extending this design to a full clock would require either a microcontroller with more available pins or additional techniques such as multiplexing or external driver circuitry to reduce pin usage.
 
 ## Features
 
