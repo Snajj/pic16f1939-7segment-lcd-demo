@@ -1,6 +1,8 @@
 # pic16f1939-7segment-lcd-demo
 Demo firmware for driving direct 7-segment LCD panels using the internal LCD controller of the PIC16F1939, with Timer1 interrupt-based updates and custom segment mapping.
 
+![LCD Demo](lcd_demo.jpg)
+
 # PIC16F1939 LCD Driver Demo
 
 ## Overview
